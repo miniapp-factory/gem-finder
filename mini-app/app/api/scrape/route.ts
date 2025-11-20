@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
@@ -17,7 +17,14 @@ export async function GET(request: Request) {
     const $ = cheerio.load(html);
     const domain = new URL(target).hostname;
 
-    const lots: any[] = [];
+    interface Lot {
+      id: number;
+      title: string;
+      currentBid: number;
+      shipping: number;
+      ebayValue: number;
+    }
+    const lots: Lot[] = [];
 
     // Basic scraping logic for supported domains
     if (domain.includes("gsaauctions.gov")) {
@@ -136,7 +143,7 @@ export async function GET(request: Request) {
     }
 
     return NextResponse.json(lots);
-  } catch (err: any) {
+  } catch (err) {
     return NextResponse.json(
       { error: err.message || "Unknown error" },
       { status: 500 }
