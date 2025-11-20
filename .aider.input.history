@@ -1,0 +1,22 @@
+
+# 2025-11-20 14:58:23.039289
++Code the following app
++```
++Build a browser-based web app where a user pastes an auction site URL; the app scrapes all lot titles and current bids from that page, uses pagination to get every lot (supporting gsaauctions.gov, kansasonlineauctions.com, proxybid.com, facebook.com/marketplace/, ebth.com, invaluable.com), fetches eBay Sold comps per title, computes My Max Bid = ((A/1.15)/3)/1.15) + shipping cost, where A = eBay Sold Value, and outputs a sortable table with these columns: Lot #, Item Title, eBay Value (hyperlink to eBay Sold search), My Max Bid (hyperlink to auction lot page), Current Bid—flagging rows where Current Bid ≤ My Max Bid. Highlight any items where profit potential is over $100 based on value and current bid + shipping
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-20 14:58:23.040347
++Code the following app
++```
++Build a browser-based web app where a user pastes an auction site URL; the app scrapes all lot titles and current bids from that page, uses pagination to get every lot (supporting gsaauctions.gov, kansasonlineauctions.com, proxybid.com, facebook.com/marketplace/, ebth.com, invaluable.com), fetches eBay Sold comps per title, computes My Max Bid = ((A/1.15)/3)/1.15) + shipping cost, where A = eBay Sold Value, and outputs a sortable table with these columns: Lot #, Item Title, eBay Value (hyperlink to eBay Sold search), My Max Bid (hyperlink to auction lot page), Current Bid—flagging rows where Current Bid ≤ My Max Bid. Highlight any items where profit potential is over $100 based on value and current bid + shipping
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-20 14:59:16.601722
++apply changes
+
+# 2025-11-20 14:59:16.602273
++apply changes
